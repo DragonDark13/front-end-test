@@ -33,6 +33,10 @@
 	    margin-bottom: 2px;
 	}
 
+	&__progress-container:last-child{
+		margin-bottom: 0;
+	}
+
 	&__progress,
 	&__count,
 	&__all-title
@@ -55,12 +59,10 @@
 		width: 100%;
 		height: 100%;
 		background: #ace2f8;
-		border-radius: 3px 3px 0 0;
+		border-radius: 0 3px 3px  0;
 		z-index: 1;
 		left: 0px;
 		top: 0;
-
-	
 	}
 
 	&__count{
@@ -83,6 +85,25 @@
 		z-index: 2;
 	   padding-left: 6px;
 	    letter-spacing: 0px;
+	}
+
+	&__border-bl{
+		.base_effect;
+
+		&:after {
+			content: '';
+			background-color: @color_black;
+			opacity: 0.302;
+			position: absolute;
+			width: 1px;
+			height: 100%;
+			left: 0;
+			top: 0;
+			bottom: 0;
+			pointer-events: none;
+			z-index: 9;
+		}
+
 	}
 
 
