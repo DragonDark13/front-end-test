@@ -1,0 +1,190 @@
+.manager-info{
+
+	&__photo{
+	float: left;
+	margin-right: 10px;
+	}
+
+	&__txt{
+	padding-top: 6px;
+	padding-left: 8%;
+	}
+
+	&__position{
+	font-size: 12px;
+	color: #808080;
+    margin-bottom: 5px;
+	}
+
+	&__description{
+	  border-radius: 4px;
+	  background-color: #fffbc8;
+	  // box-shadow:  fade( #3c2c00 , 25%)  0 0 1px 0px;
+	  border: fade( #3c2c00 , 25%) 1px solid ;
+	  padding: 7px 2px 7px 18px;
+	}
+
+}
+
+.list-incomes{
+
+	&__progress-container{
+		.clearfix;
+	    margin-bottom: 2px;
+	}
+
+	&__progress,
+	&__count,
+	&__all-title
+	{
+		float: left;
+	}
+
+	&__all-title,
+	&__progress{
+		width: 80%;
+	}
+
+	&__progress{
+		height: 24px;
+		.base_effect;
+	}
+
+	&__progress-bar{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: #ace2f8;
+		border-radius: 3px 3px 0 0;
+		z-index: 1;
+		left: 0px;
+		top: 0;
+
+	
+	}
+
+	&__count{
+		width: 20%;
+		font-size: 13px;
+		line-height: 23px;
+		font-weight: bold;
+		text-align: right;
+		padding-right: 13.4%;
+	}
+
+	h3&__count{
+		font-size: 16px;
+	}
+
+	&__text{
+		font-size: 13px;
+		line-height: 26px;
+		position: relative;
+		z-index: 2;
+	   padding-left: 6px;
+	    letter-spacing: 0px;
+	}
+
+
+}
+
+.income__all{
+    padding-top: 12px;
+    text-indent: -2px;
+    .clearfix;
+
+}
+
+
+.reviews-links{
+
+	a&__link{
+  color: rgb(0, 93, 161);
+  text-decoration: underline;
+  line-height: 1.429;
+  display: inline-block;
+      padding-left: 6px;
+}
+
+a&__link--active{
+	font-size: 16px;
+	font-weight: bold;
+	color: @text_color;
+	text-decoration: none;
+	padding-left: 0;
+
+}
+
+}
+
+.like-count__count,
+.comment-count__count{
+	font-size: 12px;
+}
+
+.review-item__{
+
+
+	&name,
+	&date{
+		display: inline-block;
+	}
+
+	&date{
+		font-size:11px;
+		padding-left: 2px;
+	}
+
+
+	&message {
+		border-style: solid;
+		border-width: 1px;
+		border-color: fade( @color_black , 24% );
+		box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.05);
+		background: #f2fbff;
+		padding: 12px 17px 12px 20px;
+		margin-bottom: 6px;
+	    margin-top: 11px;
+	    border-radius: 3px;
+	    position: relative;
+
+	    &:after {
+	    	content: '';
+	    	position: absolute;
+    	    left: 21px;
+		    top: -19px;
+	    	width: 20px;
+	    	height: 20px;
+	    	background-image: url(../../images/reviews_bg.png);
+	    	background-repeat: no-repeat;
+	    	background-position: bottom left;
+	    	pointer-events: none;
+	    }
+	}
+
+}
+
+
+@media (max-width: 520px) {
+
+	.manager-info__photo{
+		text-align: center;
+		margin-right: 0;
+		float: none;
+	}
+
+	.manager-info__txt{
+		padding-left: 0;
+		text-align: center;
+		padding-bottom: 15px;
+	}
+	
+}
+
+
+
+
+
+
+
+

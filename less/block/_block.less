@@ -1,0 +1,174 @@
+.hint{
+	max-width: 720px;
+	// width: 489px;
+    min-width: 360px;
+    padding-top: 15px;
+
+}
+
+
+.hint>*{
+	padding-left: 19px;
+	padding-right: 19px;
+}
+
+.manager-info{
+	 .clearfix;
+     padding-left: 20px;
+}
+
+.title{
+    text-align: right;
+    padding-top: 0px;
+    line-height: 15px;
+    font-size: 13px;
+    padding-right: 34px;
+    margin-top: -2px;
+    padding-bottom: 7px;
+}
+
+
+.income{
+    width: 73.1%;
+    margin-left: auto;	
+}
+
+.list-incomes{
+    padding-bottom: 13px;
+    border-bottom: #ccc 1px solid;
+    border-top:  #ccc 1px solid;
+    padding-top: 15px;
+}
+
+.reviews-links,
+.rewiews-info{
+	float: left;
+}
+
+.reviews-links{
+	width: 80%;
+}
+
+.rewiews-info{
+	width: 20%;
+}
+
+.like-count,
+.comment-count{
+	display: inline-block;
+}
+
+.reviews{
+    padding-top: 12px;
+    padding-bottom: 15px;
+}
+
+.rewiews-info{
+	text-align: right;
+}
+
+.like-count{
+    padding-right: 15px;
+}
+
+.reviews-top-panel{
+	.clearfix;
+}
+
+.review-item{
+	    padding-top: 9px;
+
+}
+
+.reviews-form{
+	background: #f2f2f2;
+    padding-top: 28px;
+    padding-bottom: 32px;
+}
+
+.input-text,
+.textarea{
+	width: 100%;
+  border-radius: 2px;
+  box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.44),inset 0px 0.5px 2px 0px rgba(0, 0, 0, 0.3);
+  padding:   5px;
+  margin-bottom: 20px;
+  border: 1px solid fade( @color_black , 15% ) ;
+  .transition;
+
+  &:focus{
+  	border-color: fade( @color_black , 24% ) ;
+  }
+
+  &,
+  &:focus{
+  	outline: none;
+  }
+
+}
+
+.textarea{
+	    min-height: 66px;
+	    resize: vertical;
+}
+
+.button{
+	border-radius: 21px;
+	width: 282px;
+	height: 44px;
+	display: block;
+	margin: auto;
+	font-weight: bold;
+	color: @text_color;
+	font-size: 16px;
+	font-family: PT Sans;
+	background-color: #fdd639;
+	letter-spacing: 0.4px;
+	cursor: pointer;
+	.transition;
+
+
+	&,
+	&:hover{
+	border: none;
+	box-shadow: none;
+	outline: none;
+	}
+
+	&:hover{
+		background-image: -moz-linear-gradient( 90deg, rgb(85,192,245) 0%, rgb(125,212,255) 100%);
+		background-image: -webkit-linear-gradient( 90deg, rgb(85,192,245) 0%, rgb(125,212,255) 100%);
+		background-image: -ms-linear-gradient( 90deg, rgb(85,192,245) 0%, rgb(125,212,255) 100%);
+	}
+
+}
+
+@media (max-width: 520px) {
+
+	.income{
+		width: 100%;
+	}
+
+	.reviews-links{
+		width: 60%;
+	}
+
+	.rewiews-info{
+		width: 40%;
+	}
+	
+}
+
+@media (max-width: 500px) {
+
+	.reviews-links, 
+	.rewiews-info{
+		float: none;
+		width: 100%;
+	}
+
+	.rewiews-info{
+		text-align: left;
+	}
+	
+}

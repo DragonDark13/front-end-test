@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Frontend Test</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="javascript/jquery-3.2.1.js"></script>
+	<script src="javascript/my_script.js"></script>
+</head>
+<body>
+
+	<div class="hint">
+
+		<div class="manager-info">
+			<div class="manager-info__photo">
+				<img src="images/user-photo.png" alt="">
+			</div>
+			<div class="manager-info__txt">
+				<h3 class="manager-info_name">Вероника Ростова</h3>
+				<div class="manager-info__position">Менеджер по продажам</div>
+				<p class="manager-info__description">Подберу для вас самые лучшие предложения. Мои услуги абсолютно бесплатны
+				</p>
+			</div>
+		</div>
+
+		<div class="income">
+			<p class="title">Услуг</p>
+			<div class="list-incomes"><div class="list-incomes__border-bl">
+					<div class="list-incomes__progress-container">
+						<div class="list-incomes__progress">
+							<div class="list-incomes__text">Ручное бронирование</div>
+							<div data-income-progress="85" class="list-incomes__progress-bar list-incomes__progress-bar--main">
+							</div>
+						</div>
+						<div class="list-incomes__count">11</div>
+					</div>
+					<div class="list-incomes__progress-container">
+						<div class="list-incomes__progress">
+							<div class="list-incomes__text">Пакетные туры</div>
+							<div data-income-progress="21" class="list-incomes__progress-bar ">
+							</div>
+						</div>
+						<div class="list-incomes__count">3</div>
+					</div>
+					<div class="list-incomes__progress-container">
+						<div class="list-incomes__progress">
+							<div class="list-incomes__text">Отели</div>
+							<div data-income-progress="14" class="list-incomes__progress-bar ">
+							</div>
+						</div>
+						<div class="list-incomes__count">1</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="income__all">
+				<h3 class="list-incomes__all-title">Всего</h3>
+				<h3 class="list-incomes__count">
+					15
+				</h3>
+			</div>
+
+		</div>
+
+		<div class="reviews">
+			<div class="reviews-top-panel">
+				<div class="reviews-links">
+					<a href="#" class="reviews-links__link reviews-links__link--active">Последние отзывы</a>
+					<a href="#" class="reviews-links__link">Все отзывы</a>
+				</div>
+				<div class="rewiews-info">
+					<div class="like-count">
+						<img src="images/lke-icon.png" alt="" class="like-count__icon" >
+						<span class="like-count__count">131</span>
+					</div>
+				
+					<div class="comment-count">
+						<img src="images/comment-icon.png" alt="" class="comment-count__icon" >
+						<span class="comment-count__count">14</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="review-item">
+				<h4 class="review-item__name">Самуил</h4>
+				<span class="review-item__date">13 октября 2011</span>
+				<p class="review-item__message">Привет, Верунь! ниче себе ты крутая. фотка класс!!!!</p>
+			</div>
+			<div class="review-item">
+				<h4 class="review-item__name">Лилия Семёновна</h4>
+				<span class="review-item__date">14 октября 2011</span>
+				<p class="review-item__message">Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно стабилизирует кинетический момент, это и есть всемирно известный центр огранки алмазов и торговли бриллиантами?</p>
+			</div>
+			<div class="review-item">
+				<h4 class="review-item__name">Лилия Семёновна</h4>
+				<span class="review-item__date">14 октября 2011</span>
+				<p class="review-item__message">Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно стабилизирует кинетический момент?</p>
+			</div>
+			
+		</div>
+
+		<form class="reviews-form">
+
+			<input type="text" name="name" value="" placeholder="" class="input-text" required>
+			<textarea name="message" class="textarea" required></textarea>
+			<input type="submit" value="Написать консультанту" class="button">
+			
+		</form>
+
+
+		
+	</div>
+	
+</body>
+</html>
